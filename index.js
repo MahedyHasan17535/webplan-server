@@ -50,7 +50,7 @@ export async function connectToMongoDB() {
 const connectedClient = await connectToMongoDB();
 
 // MongoDB database name
-const database = connectedClient.db('web');
+const database = connectedClient.db('wedplandb');
 
 // `user` and `session` are managed by Better Auth.
 const users = database.collection('user');
